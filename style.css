@@ -1,0 +1,98 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-image: linear-gradient(0deg, #dedede 33.6%, #35c7da 66.4%);
+	background-repeat: no-repeat;
+	height: 100vh;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	overflow: hidden;
+}
+
+
+.container{
+	height: 400px;
+	max-width: 22%;
+	margin: 200px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.container h1{
+	color: #fff;
+	animation-name: scalechange;
+	animation-duration: 1.3s;
+}
+
+.time-container{
+	min-width: 80%;
+	background-color: #f2f2f2;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	box-shadow: 1px 1px 10px #dedede;
+	font-size: 30px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.control{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+}
+
+.control-button{
+	margin-bottom: 5px;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	border: 1px #dedede solid;
+	outline: 0;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+#stop{
+	background-color: #c31515;
+}
+
+#start{
+	background-color: #15b32f;
+}
+
+#reset{
+	background-color: #176eb3;
+}
+
+#stop:hover{
+	background-color: #ea1616;
+}
+
+#start:hover{
+	background-color: #19d638;
+}
+
+#reset:hover{
+	background-color: #1488e4;
+}
+
+@keyframes scalechange{
+	0{
+		transform: scale(1.0,1.0);
+	}
+	50%{
+		transform: scale(1.6,1.6);
+	}
+	100%{
+		transform: scale(1.0,1.0);
+	}
+}
